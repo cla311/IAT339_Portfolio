@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Christopher Louie</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/template.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container h-100">
+                <div class="d-flex h-100 flex-fill flex-column text-center">
+                    <h1>Interactive Origami</h1>
+                    <h3><small>Interactive Arts and Technology (IAT) 320</small></h3>
+                    <h3><small>Body Interface</small></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid text-center bg-white" id="origami">
+            <div class="container h-100">
+                <div class="d-flex h-100 flex-fill flex-column text-center">
+                    <img src="img/interactive_origami.jpg" alt="Interactive Origami" class="img-resize text-center mx-auto mb-3">
+                    <p class="text-left">
+                        For the first project in IAT 320 Body Interface, we were asked to individually create an interactive origami with a circuit that would emulate a behaviour of an animal. As well, we had to make the interaction have multiple states.
+                    </p>
+
+                    <img src="img/martin.jpg" alt="Purple Martin" class="img-resize text-center mx-auto mb-3">
+
+                    <p class="text-left">
+                        First, I had to come up with an animal behaviour I wanted to emulate. For my interactive origami, I chose to emulate the iridescent properties of the purple martin’s feathers. Next, I created a prototype of the circuit and began coding the interaction. After a couple iterations and tweaks to the code, I ended up creating a circuit using a light sensor and a compass sensor to adjust the brightness and colour of the LEDs. The amount of light hitting the light sensor would adjust the colour of the LEDs, while the rotation of the compass sensor would adjust the brightness of the LEDs. I then began creating prototypes of the origami and settled on a feather design that allowed the LEDs to be attached to the bottom of the feather. In order to house the sensors, I created a stand out of Lego for the feather to sit on and the sensors to be attached to. Finally, I created the final circuit and put the final piece together. </p>
+
+                    <img src="img/circuit.jpg" alt="Final Circuit" class="img-resize text-center mx-auto mb-3">
+
+                    <p class="text-left">
+                        On issue I ran into was that the brightness transition was not smooth while the compass sensor rotated as the sensor values were not accurate. As well, the brightness would jump between the max and min when the compass sensor every 90°. To solve this, I left the 90° issue alone as it was taking too long to solve, and scaled up the compass sensor values to make it a bit smoother.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center mb-0 bg-dark footer">
+            <p class="text-white">Bootstrap 4 Template from <a class="link" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_template1">W3Schools</a></p>
+        </div>
+
+    </body>
+</html>
