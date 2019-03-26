@@ -1,10 +1,97 @@
-.fakeimg {
-    height: 200px;
-    background: #aaa;
-}
-
 .jumbotron {
-    margin-bottom:0;
     padding-top: 6rem;
     padding-bottom: 6rem;
+}
+
+.jumbotron.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#portfolio, #contact {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#origami {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.link {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.link:hover, link:focus {
+    color: #89c4f4;
+    text-decoration: none;
+}
+
+.card-deck {
+    margin-top: 1rem
+}
+
+.card-deck .card {
+    max-width: 450px;
+}
+
+.card-deck .card::not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.card-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    height: 100%;
+}
+
+.card img {
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover img, .card a:focus img  {
+    opacity: 0.2;
+}
+
+.card:hover .card-overlay, .card a:focus .card-overlay {
+    opacity: 1;
+}
+
+.img-resize {
+    width: 50%;
+    height:auto;
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 576px){
+    .img-resize {
+        height: auto;
+        width: 100%;
+    }
 }
