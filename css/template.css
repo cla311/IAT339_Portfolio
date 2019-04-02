@@ -1,16 +1,33 @@
 .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 10rem 0;
 }
 
 .jumbotron.footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
+}
+
+#banner {
+    background-image: url("../img/banner.jpg");
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+}
+
+#about {
+    padding: 8rem 0;
 }
 
 #portfolio, #contact {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
+}
+
+#portfolio {
+    background-color: #89a9b4;
+    color: white;
+}
+
+.new-bg {
+    color: #000066;
 }
 
 #project1 {
@@ -18,8 +35,7 @@
 }
 
 #origami {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -29,12 +45,22 @@
 }
 
 .link {
-    color: #aaaaaa;
+    color: rgba(255, 255, 255, 0.5);;
     text-decoration: none;
 }
 
 .link:hover, link:focus {
-    color: #89c4f4;
+    color: rgba(255, 255, 255, .75);;
+    text-decoration: none;
+}
+
+.link2 {
+    color: #666666;
+    text-decoration: none;
+}
+
+.link2:hover, link2:focus {
+    color: black;
     text-decoration: none;
 }
 
@@ -79,6 +105,10 @@
 
 .card:hover .card-overlay, .card a:focus .card-overlay {
     opacity: 1;
+}
+
+.card-text {
+    color: #000066;
 }
 
 .img-resize {
