@@ -13,6 +13,10 @@
     padding-bottom: 5rem;
 }
 
+#project1 {
+    object-position: 0 0;
+}
+
 #origami {
     padding-top: 1rem;
     padding-bottom: 1rem;

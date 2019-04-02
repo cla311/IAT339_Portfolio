@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christopher Louie - Still Creek Invasive Species Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/template.css">
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html">Christopher Louie</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container h-100">
+                <div class="d-flex h-100 flex-fill flex-column text-center">
+                    <h1>Still Creek Invasive Species Website</h1>
+                    <h3><small>Interactive Arts and Technology (IAT) 235</small></h3>
+                    <h3><small>Information Design</small></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid text-center bg-white" id="origami">
+            <div class="container h-100">
+                <div class="d-flex h-100 flex-fill flex-column text-center">
+                    <img src="img/IAT235_site.png" alt="Invasive Species Website homepage" class="img-resize text-center mx-auto mb-3">
+                    <p class="text-left">
+                        For the final project in 235 Information Design, we were asked to work in groups of up to 4 people to create a website that addresses a topic that involves people, the environment, and technology.
+                    </p>
+
+                    <img src="img/Map.png" alt="Map of Still Creek Area" class="img-resize text-center mx-auto mb-3">
+
+                    <p class="text-left">
+                        Working with a friend, we chose to make a website about the invasive species around Still Creek in Burnaby and the possible solutions to dealing with the invasive species. We first had to gather information about the issue and the possible solutions, and present it to the class in a short presentation. Next, we began creating the initial mock-up and wireframes of the website. We then began creating the initial prototype of the website, which we also had to present to the class in another short presentation. After presenting the prototype, we then began working on the final website.
+                    </p>
+
+                    <img src="img/IAT235_site@.png" alt="Invasive Species Website solutions page" class="img-resize text-center mx-auto mb-3">
+
+                    <p class="text-left">
+                        On issue we ran into was that certain divs and text boxes were not equal height. We initially tried fixing the issue using CSS, but we found that while we could adjust the heights, we would have to change them each time we added more content. After trying a few different options, we ended up using jQuery to match the heights of the text boxes and divs.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron text-center mb-0 bg-dark footer">
+            <p class="text-white">Bootstrap 4 Template from <a class="link" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_template1">W3Schools</a></p>
+        </div>
+
     </body>
 </html>
