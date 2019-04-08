@@ -8,13 +8,13 @@
 
 #banner {
     background-image: url("../img/banner.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     color: white;
 }
 
 #about {
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 #portfolio, #contact {
@@ -26,17 +26,31 @@
     color: white;
 }
 
-.new-bg {
-    color: #000066;
+.new-bg-sm {
+    background-image: url("../img/bg-white-sm.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-#project1 {
+.new-bg-lg {
+    background-image: url("../img/bg-white-lg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.new-bg {
+    background-image: url("../img/bg-white.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#invasive-img {
     object-position: 0 0;
 }
 
-#origami {
-    padding: 1rem 0;
-    max-width: 1024px;
+#origami, #invasive {
+    padding: 2rem;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -108,7 +122,7 @@
 }
 
 .card-text {
-    color: #000066;
+    color: #0000B5;
 }
 
 .img-resize {
@@ -116,16 +130,26 @@
     height:auto;
 }
 
-@media (min-width: 576px){
+@media screen and (max-width: 768px){
+    .new-bg-lg {
+        background-image: url("../img/bg-white-lg2.jpg");
+    }
+}
+
+@media screen and (min-width: 576px){
     .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
     }
 }
 
-@media (max-width: 576px){
+@media screen and (max-width: 576px){
     .img-resize {
         height: auto;
         width: 100%;
+    }
+
+    .new-bg-lg {
+        background-image: url("../img/bg-white-lg3.jpg");
     }
 }
