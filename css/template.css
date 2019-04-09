@@ -6,6 +6,20 @@
     padding: 3rem 0;
 }
 
+.element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+    white-space: pre-wrap;
+}
+
 #banner {
     background-image: url("../img/banner.jpg");
     background-size: cover;
@@ -21,15 +35,9 @@
     padding: 5rem 0;
 }
 
-#portfolio {
+.color-section {
     background-color: #89a9b4;
     color: white;
-}
-
-.new-bg-sm {
-    background-image: url("../img/bg-white-sm.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .new-bg-lg {
@@ -74,7 +82,7 @@
 }
 
 .link2:hover, link2:focus {
-    color: black;
+    color: #003399;
     text-decoration: none;
 }
 
@@ -133,13 +141,6 @@
 @media screen and (max-width: 768px){
     .new-bg-lg {
         background-image: url("../img/bg-white-lg2.jpg");
-    }
-}
-
-@media screen and (min-width: 576px){
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
     }
 }
 

@@ -1,142 +1,704 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
     <head>
-
+        <title>Christopher Louie - Style Guide</title>
         <meta charset="utf-8">
-        <title>Portfolio - Style Guide</title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
-        <link href="css/main.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/template.css">
 
     </head>
 
     <body>
+        <div class="jumbotron jumbotron-fluid text-center mb-0" id="banner">
+            <div class="container h-100">
+                <div class="d-flex h-100 flex-fill flex-column text-center">
+                    <h1>Christopher Louie - Style Guide</h1>
+                    <h3><small>IAT 339 Portfolio</small></h3>
+                </div>
+            </div>
+        </div>
 
-        <header>
-            <h1>Portfolio - Style Guide</h1>
+        <div class="jumbotron jumbotron-fluid mb-0 bg-white" id="portfolio">
+            <div class="container h-100">
+                <!-- INTERACTIVE ELEMENTS SECTION // -->
+                <section id="interactive_elements">
+                    <h2>Interactive Elements</h2>
 
-            <p>A template you can use to start building out your own style guides with.</p>
+                    <section class="element">
+                        <h3 class="my-4">In-Text Link 1</h3>
 
+                        <h4>CSS selector:</h4>
+                        <p>.bg-dark</p>
+                        <p>.text-white</p>
+                        <p>.link</p>
 
-            <nav>
-                <a href="#interactive_elements">Interactive Elements</a>
-                <a href="#text_elements">Text Elements</a>
-                <a href="#combined_elements">Combined Elements</a>
-                <a href="#citations">Citations</a>
-            </nav>
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                            &lt;div class="bg-dark"&gt;
+                            &lt;p class="text-white"&gt;Website created using Bootstrap 4. Style Guide: &lt;a class="link" href="#"&gt;Link&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                        </code></pre>
 
-        </header>
+                        <h4>Rendered element:</h4>
+                        <div class="bg-dark">
+                            <p class="text-white">Website created using Bootstrap 4. Style Guide: <a class="link" href="#">Link</a></p>
+                        </div>
+                    </section>
 
+                    <section class="element">
+                        <h3 class="my-4">In-Text Link 2</h3>
 
+                        <h4>CSS selector:</h4>
+                        <p>.link2</p>
 
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
-        <section id="interactive_elements">
-            <h2>Interactive Elements</h2>
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                            &lt;p&gt;You can contact me using the form below or at the email: &lt;a class="link2" href="mailto:cla311@sfu.ca"&gt;cla311@sfu.ca&lt;/a&gt;&lt;/p&gt;
+                        </code></pre>
 
+                        <h4>Rendered element:</h4>
+                        <p>You can contact me using the form below or at the email: <a class="link2" href="mailto:cla311@sfu.ca">cla311@sfu.ca</a></p>
+                    </section>
 
-            <section class="element">
-                <h3>In-text link</h3>
-            </section>
+                    <section class="element">
+                        <h3 class='my-4'>Navigation Link</h3>
 
+                        <h4>CSS selector:</h4>
+                        <p>.navbar</p>
+                        <p>.navbar-expand-sm</p>
+                        <p>.bg-dark</p>
+                        <p>.navbar-dark</p>
+                        <p>.navbar-nav</p>
+                        <p>.ml-auto</p>
+                        <p>.nav-item</p>
+                        <p>.nav-link</p>
+                        <p>.px-3</p>
+                        <p>.text-center</p>
 
-            <!-- Default Button styling section -->
-            <section class="element">
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                    &lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+                        &lt;ul class="navbar-nav ml-auto"&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link px-3 text-center" href="#"&gt;About&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/nav&gt;
+                </code></pre>
 
-                <h3>Navigation Link</h3>
-
-                <h4>CSS selector:</h4>
-                <p>.button-nav</p>
-
-                <h4>Sample code:</h4>
-                <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-                <h4>Rendered element:</h4>
-                <a class="button-nav" href="#">Default Button</a>
-
-            </section>
-
-
-            <section class="element">
-                <h3>Submit/Reset Buttons</h3>
-            </section>
-
-
-            <section class="element">
-                <h3>Text Input Field with Label</h3>
-            </section>
-
-
-            <section class="element">
-                <h3>Radio Button with Label</h3>
-            </section>
-
-
-            <section class="element">
-                <h3>Image as a Link</h3>
-            </section>
-
-
-        </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-        <!-- TEXT ELEMENTS SECTION // -->
-        <section id="text_elements">
-            <h2>Text Elements</h2>
-
-            <section class="element">
-                <h3>Headings</h3>
-            </section>
-
-            <section class="element">
-                <h3>Paragraphs</h3>
-            </section>
-
-            <section class="element">
-                <h3>Numbered Lists</h3>
-            </section>
-
-        </section>
-        <!-- // TEXT ELEMENTS SECTION -->
+                        <h4>Rendered element:</h4>
+                        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link px-3 text-center" href="#">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
 
 
+                    <section class="element">
+                        <h3 class='my-4'>Submit/Send Button</h3>
 
-        <!-- COMBINED ELEMENTS SECTION // -->
-        <section id="combined_elements">
-            <h2>Combined Elements</h2>
+                        <h4>CSS selector:</h4>
+                        <p>.btn</p>
+                        <p>.btn-dark</p>
 
-            <section class="element">
-                <h3>Main Navigation</h3>
-            </section>
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                    &lt;button type="submit" class="btn btn-dark"&gt;Send&lt;/button&gt;
+                </code></pre>
 
-            <section class="element">
-                <h3>Product/Service Listing</h3>
-            </section>
-
-            <section class="element">
-                <h3>Payment Form</h3>
-            </section>
-
-            <section class="element">
-                <h3>Checkout Cart</h3>
-            </section>
-
-        </section>
-        <!-- // COMBINED ELEMENTS SECTION -->
+                        <h4>Rendered element:</h4>
+                        <button type="submit" class="btn btn-dark">Send</button>
+                    </section>
 
 
+                    <section class="element">
+                        <h3 class='my-4'>Text Input Field with Label</h3>
 
-        <section id="citations">
-            <h2>Citations</h2>
+                        <h4>CSS selector:</h4>
+                        <p>.form-group</p>
+                        <p>.row</p>
+                        <p>.col-sm-2</p>
+                        <p>.col-form-label</p>
+                        <p>.col-sm-10</p>
+                        <p>#inputName</p>
 
-            <ul>
-                <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-                <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-            </ul>
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="form-group row"&gt;
+                            &lt;label for="inputName" class="col-sm-2 col-form-label"&gt;Name&lt;/label&gt;
+                            &lt;div class="col-sm-10"&gt;
+                                &lt;input type="text" class="form-control" id="inputName" placeholder="Name"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                </code></pre>
 
-        </section>
+                        <h4>Rendered element:</h4>
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="element">
+                        <h3 class='my-4'>Text Area with Label</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.form-group</p>
+                        <p>.row</p>
+                        <p>.col-sm-2</p>
+                        <p>.col-sm-10</p>
+                        <p>#form_message</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="form-group row"&gt;
+                            &lt;label for="form_message" class="col-sm-2 col-form-label"&gt;Message&lt;/label&gt;
+                            &lt;div class="col-sm-10"&gt;
+                                &lt;textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5"&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="form-group row">
+                            <label for="form_message" class="col-sm-2 col-form-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="element">
+                        <h3 class='my-4'>Image Card (Image as a Link)</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.card-deck</p>
+                        <p>.row</p>
+                        <p>.justify-content-center</p>
+                        <p>.align-content-center</p>
+                        <p>.card</p>
+                        <p>.card-img-top</p>
+                        <p>.image-thumbnail</p>
+                        <p>.card-overlay</p>
+                        <p>.card-text</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="card-deck row justify-content-center align-content-center"&gt;
+                            &lt;div class="card"&gt;
+                                &lt;a href="#"&gt;
+                                    &lt;img src="img/IAT235_site.png" alt="Still Creek Invasive Species Website" class="card-img-top image-thumbnail" id="invasive-img"&gt;
+                                    &lt;div class="card-overlay"&gt;
+                                        &lt;div class="card-text"&gt;
+                                            &lt;h4&gt;Still Creek Invasive Species Website&lt;/h4&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="card-deck row justify-content-center align-content-center">
+                            <div class="card">
+                                <a href="#">
+                                    <img src="img/IAT235_site.png" alt="Still Creek Invasive Species Website" class="card-img-top image-thumbnail" id="invasive-img">
+                                    <div class="card-overlay">
+                                        <div class="card-text">
+                                            <h4>Still Creek Invasive Species Website</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+                <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+                <!-- TEXT ELEMENTS SECTION // -->
+                <section id="text_elements">
+                    <h2>Text Elements</h2>
+
+                    <section class="element">
+                        <h3 class='my-4'>Headings</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>h1</p>
+                        <p>h2</p>
+                        <p>h3</p>
+                        <p>h4</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;h1&gt;Heading1&lt;/h1&gt;
+                        &lt;h2&gt;Heading2&lt;/h2&gt;
+                        &lt;h3&gt;Heading3&lt;/h3&gt;
+                        &lt;h4&gt;Heading4&lt;/h4&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <h1>Heading1</h1>
+                        <h2>Heading2</h2>
+                        <h3>Heading3</h3>
+                        <h4>Heading4</h4>
+                    </section>
+
+                    <section class="element">
+                        <h3 class='my-4'>Paragraphs</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>p</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend aliquet velit sit amet semper. Suspendisse non ex mattis, molestie orci at, placerat nibh. Donec posuere faucibus erat accumsan malesuada. Sed commodo commodo faucibus. Aenean gravida urna odio, at interdum tellus tristique vitae. Nulla eget convallis nunc. Duis suscipit vestibulum erat, nec fermentum ante. Integer tincidunt orci diam, ac congue eros imperdiet at. In sollicitudin libero vitae mollis dictum. Nulla malesuada consectetur eleifend.&lt;/p&gt;
+                </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend aliquet velit sit amet semper. Suspendisse non ex mattis, molestie orci at, placerat nibh. Donec posuere faucibus erat accumsan malesuada. Sed commodo commodo faucibus. Aenean gravida urna odio, at interdum tellus tristique vitae. Nulla eget convallis nunc. Duis suscipit vestibulum erat, nec fermentum ante. Integer tincidunt orci diam, ac congue eros imperdiet at. In sollicitudin libero vitae mollis dictum. Nulla malesuada consectetur eleifend.</p>
+                    </section>
+
+                </section>
+                <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+                <!-- COMBINED ELEMENTS SECTION // -->
+                <section id="combined_elements">
+                    <h2>Combined Elements</h2>
+
+                    <section class="element">
+                        <h3 class='my-4'>Main Navigation</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.navbar</p>
+                        <p>.navbar-expand-sm</p>
+                        <p>.bg-dark</p>
+                        <p>.navbar-dark</p>
+                        <p>.navbar-brand</p>
+                        <p>.navbar-toggler</p>
+                        <p>.navbar-toggler-icon</p>
+                        <p>.collapse</p>
+                        <p>.navbar-collapse</p>
+                        <p>.justify-content-end</p>
+                        <p>#collapsibleNavbar</p>
+                        <p>.navbar-nav</p>
+                        <p>.ml-auto</p>
+                        <p>.nav-item</p>
+                        <p>.nav-link</p>
+                        <p>.px-3</p>
+                        <p>.text-center</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+                            &lt;a class="navbar-brand" href="index.html"&gt;Christopher Louie&lt;/a&gt;
+                            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"&gt;
+                                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"&gt;
+                                &lt;ul class="navbar-nav ml-auto"&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link px-3 text-center" href="#"&gt;About&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link px-3 text-center" href="#"&gt;Portfolio&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link px-3 text-center" href="#"&gt;Contact&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/nav&gt;
+                        </code></pre>
+
+                        <h4 class='my-4'>Rendered element:</h4>
+                        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                            <a class="navbar-brand" href="index.html">Christopher Louie</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 text-center" href="#interactive_elements">Interactive Elements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 text-center" href="#text_elements">Text Elements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 text-center" href="#combined_elements">Combined Elements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 text-center" href="#citations">Citations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+
+                    <section class="element">
+                        <h3 class='my-4'>Banner Jumbotron</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.jumbotron-fluid</p>
+                        <p>.text-center</p>
+                        <p>.mb-0</p>
+                        <p>.#banner</p>
+                        <p>.navbar-toggler</p>
+                        <p>.navbar-toggler-</p>
+                        <p>.collapse</p>
+                        <p>.navbar-collapse</p>
+                        <p>.justify-content-end</p>
+                        <p>#collapsibleNavbar</p>
+                        <p>.navbar-nav</p>
+                        <p>.ml-auto</p>
+                        <p>.nav-item</p>
+                        <p>.nav-link</p>
+                        <p>.px-3</p>
+                        <p>.text-center</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron jumbotron-fluid text-center mb-0" id="banner"&gt;
+                            &lt;div class="container h-100"&gt;
+                                &lt;div class="d-flex h-100 flex-fill flex-column text-center"&gt;
+                                    &lt;h1&gt;Christopher Louie&lt;/h1&gt;
+                                    &lt;h3&gt;&lt;small&gt;Programmer, Web Designer, Game Designer&lt;/small&gt;&lt;/h3&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron jumbotron-fluid text-center mb-0" id="banner">
+                            <div class="container h-100">
+                                <div class="d-flex h-100 flex-fill flex-column text-center">
+                                    <h1>Christopher Louie</h1>
+                                    <h3><small>Programmer, Web Designer, Game Designer</small></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="element">
+                        <h3 class='my-4'>Portfolio</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.jumbotron-fluid</p>
+                        <p>.mb-0</p>
+                        <p>.color-section</p>
+                        <p>#portfolio</p>
+                        <p>.container</p>
+                        <p>.h-100</p>
+                        <p>.text-center</p>
+                        <p>.mb-5</p>
+                        <p>.card-deck</p>
+                        <p>.row</p>
+                        <p>.justify-content-center</p>
+                        <p>.align-content-center</p>
+                        <p>.card</p>
+                        <p>.card-img-top</p>
+                        <p>.image-thumbnail</p>
+                        <p>.card-overlay</p>
+                        <p>.card-text</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron jumbotron-fluid mb-0 color-section" id="portfolio"&gt;
+                            &lt;div class="container h-100"&gt;
+                                &lt;div class="text-center"&gt;
+                                    &lt;h2 class="mb-5"&gt;Portfolio&lt;/h2&gt;
+                                    &lt;div class="card-deck row justify-content-center align-content-center"&gt;
+                                        &lt;div class="card"&gt;
+                                            &lt;a href="#"&gt;
+                                                &lt;img src="img/IAT235_site.png" alt="Still Creek Invasive Species Website" class="card-img-top image-thumbnail" id="invasive-img"&gt;
+                                                &lt;div class="card-overlay"&gt;
+                                                    &lt;div class="card-text"&gt;
+                                                        &lt;h4&gt;Still Creek Invasive Species Website&lt;/h4&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                        &lt;/div&gt;
+
+
+                                        &lt;div class="card"&gt;
+                                            &lt;a href="#"&gt;
+                                                &lt;img src="img/interactive_origami.jpg" alt="Interactive Origami" class="card-img-top image-thumbnail"&gt;
+                                                &lt;div class="card-overlay"&gt;
+                                                    &lt;div class="card-text"&gt;
+                                                        &lt;h4&gt;Interactive Origami&lt;/h4&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron jumbotron-fluid mb-0 color-section" id="portfolio">
+                            <div class="container h-100">
+                                <div class="text-center">
+                                    <h2 class="mb-5">Portfolio</h2>
+                                    <div class="card-deck row justify-content-center align-content-center">
+                                        <div class="card">
+                                            <a href="#">
+                                                <img src="img/IAT235_site.png" alt="Still Creek Invasive Species Website" class="card-img-top image-thumbnail" id="invasive-img">
+                                                <div class="card-overlay">
+                                                    <div class="card-text">
+                                                        <h4>Still Creek Invasive Species Website</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="card">
+                                            <a href="#">
+                                                <img src="img/interactive_origami.jpg" alt="Interactive Origami" class="card-img-top image-thumbnail">
+                                                <div class="card-overlay">
+                                                    <div class="card-text">
+                                                        <h4>Interactive Origami</h4>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="element">
+                        <h3 class="my-4">Contact Form</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.jumbotron-fluid</p>
+                        <p>.mb-0</p>
+                        <p>.color-section</p>
+                        <p>#contact</p>
+                        <p>.container</p>
+                        <p>.h-100</p>
+                        <p>.text-center</p>
+                        <p>.mb-5</p>
+                        <p>.row</p>
+                        <p>.justify-content-center</p>
+                        <p>.col-md-8</p>
+                        <p>.link2</p>
+                        <p>.p-4</p>
+                        <p>.form-group</p>
+                        <p>.col-sm-2</p>
+                        <p>.col-form-label</p>
+                        <p>.col-sm-10</p>
+                        <p>#inputName</p>
+                        <p>#inputEmail</p>
+                        <p>#inputSubject</p>
+                        <p>#form_message</p>
+                        <p>.btn</p>
+                        <p>.btn-dark</p>
+
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron jumbotron-fluid mb-0 new-bg" id="contact"&gt;
+                            &lt;div class="container h-100"&gt;
+                                &lt;div class="text-center"&gt;
+                                    &lt;h2 class="mb-5"&gt;Contact&lt;/h2&gt;
+                                    &lt;div class="row justify-content-center"&gt;
+                                        &lt;p class="col-md-8"&gt;You can contact me using the form below or at the email: &lt;a class="link2" href="mailto:cla311@sfu.ca"&gt;cla311@sfu.ca&lt;/a&gt;&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;form class="p-4"&gt;
+                                    &lt;div class="form-group row"&gt;
+                                        &lt;label for="inputName" class="col-sm-2 col-form-label"&gt;Name&lt;/label&gt;
+                                        &lt;div class="col-sm-10"&gt;
+                                            &lt;input type="text" class="form-control" id="inputName" placeholder="Name"&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="form-group row"&gt;
+                                        &lt;label for="inputEmail" class="col-sm-2 col-form-label"&gt;Email&lt;/label&gt;
+                                        &lt;div class="col-sm-10"&gt;
+                                            &lt;input type="email" class="form-control" id="inputEmail" placeholder="Email"&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="form-group row"&gt;
+                                        &lt;label for="inputSubject" class="col-sm-2 col-form-label"&gt;Subject&lt;/label&gt;
+                                        &lt;div class="col-sm-10"&gt;
+                                            &lt;input type="email" class="form-control" id="inputSubject" placeholder="Subject"&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="form-group row"&gt;
+                                        &lt;label for="form_message" class="col-sm-2 col-form-label"&gt;Message&lt;/label&gt;
+                                        &lt;div class="col-sm-10"&gt;
+                                            &lt;textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5"&gt;&lt;/textarea&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="form-group row"&gt;
+                                        &lt;div class="col-sm-10"&gt;
+                                            &lt;button type="submit" class="btn btn-dark"&gt;Send&lt;/button&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                        &lt;/div>
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron jumbotron-fluid mb-0 new-bg" id="contact">
+                            <div class="container h-100">
+                                <div class="text-center">
+                                    <h2 class="mb-5">Contact</h2>
+                                    <div class="row justify-content-center">
+                                        <p class="col-md-8">You can contact me using the form below or at the email: <a class="link2" href="mailto:cla311@sfu.ca">cla311@sfu.ca</a></p>
+                                    </div>
+                                </div>
+                                <form class="p-4">
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputSubject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="form_message" class="col-sm-2 col-form-label">Message</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-dark">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="element">
+                        <h3 class='my-4'>Footer</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.text-center</p>
+                        <p>.mb-0</p>
+                        <p>.bg-dark</p>
+                        <p>.footer</p>
+                        <p>.text-white</p>
+                        <p>.link</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron text-center mb-0 bg-dark footer"&gt;
+                            &lt;p class="text-white"&gt;Website created using Bootstrap 4. Style Guide: &lt;a class="link" href="styleGuide.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron text-center mb-0 bg-dark footer">
+                            <p class="text-white">Website created using Bootstrap 4. Style Guide: <a class="link" href="styleGuide.html">Link</a></p>
+                        </div>
+                    </section>
+
+                </section>
+                <!-- // COMBINED ELEMENTS SECTION -->
+
+                <section id="backgrounds">
+                    <h2>Backgrounds</h2>
+
+                    <section class="element">
+                        <h3 class='my-4'>White Background</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.text-center</p>
+                        <p>.mb-0</p>
+                        <p>.new.bg (Used for normal background size on normal sections)</p>
+                        <p>.new.bg-lg (Used for large background size on longer sections)</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron text-center mb-0 new-bg"&gt;
+                        &lt;/div&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron jumbotron-fluid mb-0 new-bg">
+                        </div>
+                    </section>
+
+                    <section class="element">
+                        <h3 class='my-4'>Coloured Background</h3>
+
+                        <h4>CSS selector:</h4>
+                        <p>.jumbotron</p>
+                        <p>.text-center</p>
+                        <p>.mb-0</p>
+                        <p>.color-section</p>
+
+                        <h4>Sample code:</h4>
+                        <pre><code>
+                        &lt;div class="jumbotron text-center mb-0 color-section"&gt;
+                        &lt;/div&gt;
+                        </code></pre>
+
+                        <h4>Rendered element:</h4>
+                        <div class="jumbotron jumbotron-fluid mb-0 color-section">
+                        </div>
+                    </section>
+
+                </section>
+
+                <section id="citations">
+                    <h2>Citations</h2>
+
+                    <ul>
+                        <li>W3Schools Bootstrap 4 Template. Retrieved from <a class="link2" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_template1">https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_template1</a></li>
+                        <li>W3Schools Bootstrap 4 Tutorial. Retrieved from <a class="link2" href="https://www.w3schools.com/bootstrap4/default.asp">https://www.w3schools.com/bootstrap4/default.asp</a></li>
+                        <li>Bootstrap 4.3 Official Documentation. Retrieved from <a class="link2" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">https://getbootstrap.com/docs/4.3/getting-started/introduction/</a></li>
+                        <li>Banner background image. Retrieved from <a class="link2" href="https://pixabay.com/illustrations/background-abstract-line-2462431/">https://pixabay.com/illustrations/background-abstract-line-2462431/</a></li>
+                        <li>Odd section background based on Gray neural network illustration by rawpixel.com - www.freepik.com. Retrieved from <a class="link2" href="https://www.freepik.com/free-vector/gray-neural-network-illustration_3841813.htm">https://www.freepik.com/free-vector/gray-neural-network-illustration_3841813.htm</a></li>
+                        <li>Image of a purple martin. Retrieved from <a class="link2" href="https://cdn.audubon.org/cdn/farfuture/7T1CZQLqkECwUMFYbFceC8iGlFQbBbPAvy5IoDsb7VQ/mtime:1422651789/sites/default/files/Purple%20Martin%20s60-5-005_V.jpg">https://cdn.audubon.org/cdn/farfuture/7T1CZQLqkECwUMFYbFceC8iGlFQbBbPAvy5IoDsb7VQ/mtime:1422651789/sites/default/files/Purple%20Martin%20s60-5-005_V.jpg</a></li>
+                    </ul>
+
+                </section>
+            </div>
+        </div>
 
 
 
