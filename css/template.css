@@ -1,89 +1,87 @@
 .jumbotron {
-    padding: 10rem 0;
+    padding: 10rem 0
 }
 
 .jumbotron.footer {
-    padding: 3rem 0;
+    padding: 3rem 0
 }
 
 .element {
     padding-bottom: 2rem;
-    border-top-width: 0.15rem;
+    border-top-width: .15rem;
     border-top-style: solid;
-    border-top-color: black;
+    border-top-color: #000
 }
 
 code {
-    background-color: #EEE;
-    padding: 0.5rem;
+    background-color: #eee;
+    padding: .5rem;
     display: block;
-    white-space: pre-wrap;
+    white-space: pre-wrap
 }
 
 #banner {
-    background-image: url("../img/banner.jpg");
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #fff
 }
 
 #about {
-    padding: 10rem 0;
+    padding: 10rem 0
 }
 
-#portfolio, #contact {
-    padding: 5rem 0;
+#contact,#portfolio {
+    padding: 5rem 0
 }
 
 .color-section {
     background-color: #89a9b4;
-    color: white;
+    color: #fff
 }
 
-.new-bg-lg {
-    background-image: url("../img/bg-white-lg.jpg");
+.new-bg,.new-bg-lg {
+    background-image: url(../img/bg-white-lg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center
 }
 
 .new-bg {
-    background-image: url("../img/bg-white.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url(../img/bg-white.jpg)
 }
 
 #invasive-img {
-    object-position: 0 0;
+    object-position: 0 0
 }
 
-#origami, #invasive {
+#invasive,#origami {
     padding: 2rem;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .footer p {
-    margin: 0;
+    margin: 0
 }
 
 .link {
-    color: rgba(255, 255, 255, 0.5);;
-    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    text-decoration: none
 }
 
-.link:hover, link:focus {
-    color: rgba(255, 255, 255, .75);;
-    text-decoration: none;
+.link:hover,link:focus {
+    color: rgba(255,255,255,.75);
+    text-decoration: none
 }
 
 .link2 {
-    color: #666666;
-    text-decoration: none;
+    color: #666;
+    text-decoration: none
 }
 
-.link2:hover, link2:focus {
-    color: #003399;
-    text-decoration: none;
+.link2:hover,link2:focus {
+    color: #039;
+    text-decoration: none
 }
 
 .card-deck {
@@ -92,10 +90,7 @@ code {
 
 .card-deck .card {
     max-width: 450px;
-}
-
-.card-deck .card{
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .card-overlay {
@@ -104,53 +99,53 @@ code {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center
 }
 
 .card a {
     text-decoration: none;
-    height: 100%;
+    height: 100%
 }
 
 .card img {
     height: 100%;
     object-fit: cover;
     transition: .5s ease;
-    backface-visibility: hidden;
+    backface-visibility: hidden
 }
 
-.card:hover img, .card a:focus img  {
-    opacity: 0.2;
+.card a:focus img,.card:hover img {
+    opacity: .2
 }
 
-.card:hover .card-overlay, .card a:focus .card-overlay {
-    opacity: 1;
+.card a:focus .card-overlay,.card:hover .card-overlay {
+    opacity: 1
 }
 
 .card-text {
-    color: #0000B5;
+    color: #0000b5
 }
 
 .img-resize {
     width: 50%;
-    height:auto;
+    height: auto
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px) {
     .new-bg-lg {
-        background-image: url("../img/bg-white-lg2.jpg");
+        background-image: url(../img/bg-white-lg2.jpg)
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width:576px) {
     .img-resize {
         height: auto;
-        width: 100%;
+        width: 100%
     }
 
     .new-bg-lg {
-        background-image: url("../img/bg-white-lg3.jpg");
+        background-image: url(../img/bg-white-lg3.jpg)
     }
 }
