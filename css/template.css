@@ -94,7 +94,7 @@ code {
     max-width: 450px;
 }
 
-.card-deck .card::not(:last-child) {
+.card-deck .card{
     margin-bottom: 15px;
 }
 
